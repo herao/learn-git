@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_rnq_ml2_my">
+ <title>Sync.IncludeLinkedData</title>
+ <conbody>
+  <p>Allows the CRM.pad application to override preventive filters set on linked records and ensure
+   that linked records are also synchronized.</p>
+  <p>For example, an appointment record is a linked record to a Person record, filters set on the
+   appointment record might prevents it from being synchronized along with the Person record. Set
+   this parameter to true to override the filters and complete the synchronization of the linked
+   Appointment record. For more
+   information, see <xref href="c_pad_admin-7_10-Filters_crm.xml"/>.</p>
+  <p>Type: Checkbox</p>
+  <p>Default value: False</p>
+ </conbody>
+</concept>
