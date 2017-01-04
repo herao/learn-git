@@ -1,0 +1,23 @@
+Doing a partial checkout of a sub folder from the main branch in git
+
+Example main branch location: https://github.com/trilogy-group/aurea-ipm-main.git
+
+Doing a 
+
+*************************************
+1. create a local directory "auea-ipm-main"
+2. right click on the folder and start the git shell or start the git shell and cd into "auea-ipm-main".
+3. git init
+4. git remote add origin https://github.com/trilogy-group/aurea-ipm-main.git
+5. git config core.sparseCheckout true
+6. echo "InsuranceSolution/docs/" >> .git/info/sparse-checkout
+7. git pull --depth=1 origin master
+adding a new line.
+
+
+
+
+
+*************************************
+Failed command
+git clone https://github.com/trilogy-group/aurea-ipm-main.git -b InsuranceSolution/docs  --single-branch git://github/repository.git
